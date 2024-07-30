@@ -5,7 +5,7 @@
     "autoload": {
         "psr-4": {
             "Phestel\\": "src/",
-            "Phestel\\Tests": "tests/"
+            "Phestel\\Tests\\": "tests/"
         }
     },
     "authors": [
@@ -14,5 +14,14 @@
             "email": "mateusz@cholewka.com.pl"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "pestphp/pest": "^2.34",
+        "laravel/pint": "^1.17",
+        "phpstan/phpstan": "^1.11"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
